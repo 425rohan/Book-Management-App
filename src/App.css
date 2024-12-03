@@ -1,0 +1,95 @@
+html{
+  padding: 0;
+  margin: 0;
+}
+.bookList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+.bookCard{
+  max-width: 250px;
+  margin: 1.5rem;
+  background-color: rgb(255, 248, 239);
+  padding: 1rem;
+  box-shadow: 0.1rem 0.1rem 0.5rem ;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: 0.25s ease-in;
+}
+.bookCard:hover{
+  transform: scale(1.1);
+  box-shadow: 0.5rem 0.5rem 1rem ;
+}
+
+.bookCard img{
+  display: block;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  max-width: 150px;
+  margin: 0 auto;
+}
+.bookCard h3{
+  color: rgb(131, 119, 104);
+}
+
+.bookCard h2{
+  color: rgb(74, 68, 61);
+}
+
+.bookCard p{
+  color: rgb(49, 46, 42);
+}
+
+
+h1{
+  text-align: center;
+  font-family:cursive,'Times New Roman', Times, serif;
+  font-size: 2.25rem;
+  color : rgb(84, 76, 66);
+  margin: 3rem 1rem;
+}
+
+.search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem 0;
+  min-height: 150px;
+}
+
+@media (max-width: 480px){
+  .search{
+    flex-direction: column;
+    min-height: 300px;
+  }
+}
+.search input{
+  padding: 0.5rem;
+  flex-grow: 0.25;
+  max-height: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.search button{
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: none;
+  color: rgb(253, 240, 224);
+  font-weight: 600;
+  background-color: rgb(106, 96, 83);
+  transition: 0.2s ease;
+  min-height: 2.5rem;
+  
+}
+
+.search button:hover{
+  opacity: 0.5;
+  color: white;
+}
